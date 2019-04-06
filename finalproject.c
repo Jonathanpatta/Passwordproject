@@ -166,6 +166,7 @@ fp = fopen("password10mil.txt", "r"); // read mode
     }
    fclose(fp);
 }
+//********************brute force*************************************************
 void bruteforce()
 {
 
@@ -214,7 +215,7 @@ void bruteforce()
         bfstrength/=10.0*maxchar*maxchar*c;
 
         printf("\n\nstrength of '%s' = %f out of 100\n",pass,bfstrength);
-        if(bfstrength>60.0)
+        if(bfstrength>50.0)
         {
             printf("good score!!");
         }
